@@ -226,7 +226,7 @@ footer {
     height: 350px;
 }
 footer menu{
-    grid-area: b;
+    grid-area: salsa;
     display: flex;
 }
 footer menu li{
@@ -239,7 +239,7 @@ footer menu li:last-child{
     margin-right: 0;
 }
 footer figure {
-    grid-area: a;
+    grid-area: mexicanRice;
     width: 500px;
     height: 400px;
 }
@@ -396,6 +396,7 @@ footer figcaption {
     footer menu {
         position:relative;
         right: 350px;
+        padding:10px;
     }
     footer figure {
         display: grid;
