@@ -1,0 +1,584 @@
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    background-color: #F2F2F2;
+    width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "nav" "search" "body" "footer";
+}
+main {
+    grid-area: body;
+    margin-bottom: -20px;
+}
+h1 {
+    font-family:'Bebas Neue', cursive;
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+h2 {
+    font-family:'Bebas Neue', cursive;
+    font-size: 30px;
+}
+h3 {
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+}
+nav {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    width: 1280px;
+    height:150px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    grid-area: nav;
+}
+nav a {
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+}
+nav ul {
+    width: 540px;
+    margin-right: 250px;
+    display: flex;
+    align-self: center;
+    margin-left: 100px;
+    list-style: none;
+}
+nav li {
+    color:#EB5428;
+    text-align: center;
+    margin-right: 60px;
+}
+nav li:last-child {
+    margin-right:0;
+}
+nav img {
+    width: 50px;
+    height: auto;
+}
+nav span {
+    font-family:'Bebas Neue', cursive;
+    background-color: white;
+    font-size: 20px;
+    
+}
+
+#hamburger {
+    width: 0;
+    margin: 0;
+    visibility: hidden;
+}
+#hamburger svg, #search svg{
+    background-color: white;
+}
+#logo {
+    margin:0;
+    background-color:#EB5428;
+    padding: 50px;
+}
+.avatar {
+    font-family:'Bebas Neue', cursive;
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.search {
+    grid-area: search;
+    margin: 70px auto;
+    margin-bottom: 0;
+}
+.search svg {
+    margin:-1px;
+    position:absolute;
+}
+.search input{
+    height:33px;
+    width: 250px;
+    border-color: #EB5428;
+    border-style: solid;
+}
+
+menu li {
+    margin-bottom: 30px;
+    list-style: none;
+}
+menu p {
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+    bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    color:#EB5428;
+}
+
+#menu {
+    display: flex;
+}
+#menu menu {
+    background-color: white;
+    margin: 0;
+    background-color: white;
+    border:#EB5428 solid 2px; 
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+#menu img{
+    width: 500px;
+    height:auto;
+}
+#details {
+    background-color: #0D0D0D;
+    color: #7ABFBF;
+    padding-top: 1px;
+    text-align: center;
+}
+#details ul {
+    list-style: none;
+    margin:20px;
+    display: flex;
+}
+
+#details .bold {
+    font-weight: bold;
+}
+#details li {
+    margin-right: 175px;
+}
+#details li:last-child {
+    margin-right: 10px;
+}
+.Time{
+    font-weight: bold;
+}
+
+#social li {
+    padding-top:50px;
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+li,p,dd {
+    font-family: 'Montserrat', sans-serif;
+}
+#p{
+    padding-left: 10px;
+    line-height: 30px;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+dl {
+    display: flex;
+}
+dt {
+    margin-right: 20px;
+}
+dt:last-child {
+    margin: 0;
+}
+}
+aside {
+    background-color: #7ABFBF;
+    padding-top: 1px;
+}
+aside h3 {
+    text-align: center;
+}
+#recipe {
+    display: flex;
+}
+#recipe h2{
+    text-align: center;
+}
+#recipe li{
+    margin-bottom: 10px;
+}
+#ingredients {
+    width: 350px;
+}
+#directions ol{
+    margin: 0 50px;
+}
+#directions li{
+    margin-bottom: 40px;
+}
+footer {
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas: "mexicanRice salsa";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    height: 350px;
+}
+footer menu{
+    grid-area: b;
+    display: flex;
+}
+footer menu li{
+    width: 50px;
+    margin-right: 110px;
+    text-align: center;
+    color:#EB5428;
+}
+footer menu li:last-child{
+    margin-right: 0;
+}
+footer figure {
+    grid-area: a;
+    width: 500px;
+    height: 400px;
+}
+footer figure img {
+    width:180px;
+}
+footer figcaption {
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+    position: relative;
+    right: 0;
+    top: 50px;
+}
+.cap {
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+    margin: 0;
+}
+.rating {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        margin: 0 auto;
+        display: grid;
+        width: 770px;
+        grid-template-areas: "nav" "body" "footer";
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 768px;
+        height: 230px;
+        grid-template-areas: "logo search sign" "sections sections sections";
+       
+    }
+    nav ul {
+        width: 768px;
+        grid-area: sections;
+        height: 300px;
+        padding:0;
+        margin: 0;
+    }
+    nav li {
+        margin-right: 5px;
+    }
+    nav li:last-child{
+        margin-right: 0;
+    }
+    .avatar {
+        margin:0 auto;
+        grid-area: sign;
+        padding: 0;
+        position: relative;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    #logo {
+        background-color: #EB5428;
+        position: relative;
+        margin:0;
+        padding: 20px;
+        width: 65px;
+        grid-area: logo;
+    }
+    .search {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        right: -70px;
+        margin-top: 20px;
+        grid-area: nav;
+    }
+    h1 {
+        text-align: left;
+        position: relative;
+        margin-top: 10px;
+        left: 40px;
+    }
+    #menu menu{
+        background-color: rgba(255, 255, 255, 0.758);
+        display: flex;
+        position: absolute;
+        border: none;
+        padding:0;
+        width: 768px;
+        
+    }
+    #menu {
+        display:block;
+    }
+    #menu img {
+        width: 770px;
+        height: auto;
+    }
+    #menu li {
+        margin-top: 20px;
+        margin-right: 150px;
+        margin-bottom: 0px;
+    }
+    #menu li:first-child {
+        margin-left: 50px;
+    }
+    #description {
+        width: 700px;
+    }
+    #details {
+        width: 768px;
+        background-color: #F2F2F2;
+        color:#0D0D0D;
+    }
+    #details ul {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    #details li {
+        display: flex;
+        margin: 0;
+    }
+    #details li p:last-child {
+        margin-left: 5px;
+    }
+    #recipe {
+        width: 768px;
+    }
+    aside {
+        width: 768px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    aside dl {
+        width: 768px;
+        display: grid;
+        grid-template-areas: "mexicanRice salsa" "guacamole tortillas";
+    }
+    #mexicanRice{
+        grid-area: mexicanRice;
+    }
+    #salsa{
+        grid-area: salsa;
+    }
+    #guacamole {
+        grid-area: guacamole;
+    }
+    #tortillas {
+        grid-area: tortillas;
+    }
+    footer {
+        width: 768px;
+        height: 300px;
+    }
+    footer menu {
+        position:relative;
+        right: 350px;
+    }
+    footer figure {
+        display: grid;
+        grid-template-areas: "mexicanRice" "salsa";
+        grid-template-rows: 1fr 200px;
+    }
+    footer figure img {
+        grid-area: mexicanRice;
+        margin-bottom: 0;
+    }
+     footer figcaption {
+        grid-area: salsa;
+        right: 155px;
+        top: 0;
+    }
+    footer menu li{
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        width: 414px;
+        padding: 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "nav" "body" "footer";
+    }
+    h1 {
+        text-align: left;
+        width: 414px;
+        margin: 30px 0;
+        margin-top: 50px;
+        padding-left: 80px;
+    }
+    nav {
+        display: grid;
+        width:414px;
+        height: 110px;
+        grid-template-areas: "burger logo sign";
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #EB5428;
+    }
+    nav ul {
+        visibility: hidden;
+    }
+   
+    .avatar {
+        margin:0px auto;
+        grid-area: sign;
+        padding: 0 5px;
+        height: 85px;
+        padding-bottom: 0;
+        padding-top: 30px;
+        position: relative;
+        bottom: 5px;
+        right: 31px;
+        background-color: white;
+    }
+    .avatar figcaption {
+        position:relative;
+        bottom: 15px;
+    }
+    #logo {
+        margin:0;
+        grid-area: logo;
+        width: 140px;
+        margin: 0 70px;
+        margin-right:10px;
+        padding: 10px;
+        margin-left: 60px;
+    }
+    .search {
+        grid-area: body;
+        margin: 0;
+        margin-top: 15px;
+    }
+    #hamburger {
+        visibility: visible;
+        grid-area: burger;
+        align-self: center;
+        width: 85px;
+        height: auto;
+        text-align: center;
+        background-color: white;
+        padding: 30px 10px;
+        height: 50px;
+    }
+    #hamburger figcaption {
+        font-family:'Bebas Neue', cursive;
+        font-size: 20px;
+        position: relative;
+        bottom: 12px;
+    }
+    
+    #menu menu{
+        display: flex;
+        border: none;
+        position: relative;
+        padding:0;
+        width: 414px;
+        background-color: white;
+    }
+    #menu {
+        display:block;
+    }
+    #menu img {
+        width: 414px;
+        height: auto;
+    }
+    #menu li {
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+    }
+    #menu li:first-child {
+        margin-left: 50px;
+    }
+    #p {
+        width: 370px;
+    }
+    #social li{
+        padding-right:20px;
+        font-size:15px;
+    }
+    #details {
+        width: 414px;
+        background-color: #F2F2F2;
+        color:#0D0D0D;
+    }
+    #details ul {
+        display: block;
+        margin: 0 auto;
+    }
+    #details li {
+        display: flex;
+        margin: 0;
+    }
+    #details li p:last-child {
+        margin-left: 5px;
+    }
+    #recipe {
+        width: 414px;
+        display:block;
+    }
+    #directions ol{
+        margin: 0;
+        margin-right: 10px;
+    }
+    aside {
+        width: 414px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    aside dl {
+        width: 414px;
+        display: block;
+    }
+    footer {
+        width: 414px;
+        height: 400px;
+        display: block;
+    }
+    footer figure {
+        display: grid;
+        grid-template-areas: "mexicanRice" "salsa";
+        grid-template-rows: 1fr 200px;
+        margin: 0 110px;
+    }
+    footer figure img {
+        grid-area: mexicanRice;
+        margin-bottom: 0;
+    }
+     footer figcaption {
+        grid-area: salsa;
+        right: 155px;
+        top: 0;
+    }
+    footer menu {
+        position: relative;
+        left: 0;
+    }
+    footer menu li{
+        margin-right: 45px;
+    }
+}
